@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="rps.css" />
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="title">Rock Paper Scissors</h1>
+  </header>
+
+  <main class="main">
+    <div class="scoreboard">
+
+      <h2 class="game-info" id="gameInfo">What will you choose?</h2>
+      <h3 class="score-msg" id="scoreMsg">
+        First one to 5 wins the game!
+      </h3>
+      <div class="scores-container">
+        <div class="score-box">
+          <div class="symbol" id="playerSymbol"></div>
+          <p class="score" id="playerScore">Player: 0</p>
+        </div>
+
+        <div class="score-box">
+          <div class="symbol" id="computerSymbol"></div>
+          <p class="score" id="computerScore">Computer: 0</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="buttons">
+      <button class="btn btn-square" id="rockBtn">
+        <div class="symbol">✊</div>
+      </button>
+      <button class="btn btn-square" id="paperBtn">
+        <div class="symbol">✋</div>
+      </button>
+      <button class="btn btn-square" id="scissorsBtn">
+        <div class="symbol">✌️</div>
+      </button>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>
+      Copyright ©
+      <script>
+        document.write(new Date().getFullYear())
+      </script>
+      nharara
+    </p>
+    <a href="https://github.com/nharara" target="_blank">
+      <i class="fab fa-github"></i></a>
+  </footer>
+
+  <div class="modal" id="gameOverModal">
+    <p class="modal-title" id="gameOverMsg"></p>
+    <button class="btn btn-restart" id="restartBtn">Play again</button>
+  </div>
+  <div class="overlay" id="overlay"></div>
+  <script src="js-challenges/rps.js"></script>
+</body>
+
+</html>
