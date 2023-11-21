@@ -12,8 +12,9 @@ html {
 }
 
 body {
-  background-color: #848C8E;
-  color: #F8F8F8;
+  /* background-color: #848c8e; */
+  background: linear-gradient(to right bottom, #e1b382, #c89666);
+  color: #f8f8f8;
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
   /* footer support */
@@ -27,6 +28,8 @@ button {
   font-size: inherit;
   cursor: pointer;
   outline: none;
+  box-shadow: 3px 6px 40px #00000091;
+  justify-items: center;
 }
 
 /* HEADER */
@@ -39,7 +42,7 @@ button {
 
 .title {
   font-size: 32px;
-  color: #FFCA00;
+  color: #ffca00;
   /* font-family: 'Press Start 2P', cursive; */
 }
 
@@ -109,7 +112,6 @@ button {
 
 .symbol {
   font-size: 80px;
-  margin-bottom: 10px;
 }
 
 /* FOOTER */
@@ -123,13 +125,13 @@ button {
   gap: 10px;
   width: 100%;
   padding: 10px;
-  color: #F8F8F8;
+  color: #f8f8f8;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
 }
 
 .fa-github {
-  color: #F8F8F8;
+  color: #f8f8f8;
   font-size: 24px;
   transition: transform 0.3s ease-in-out;
 }
@@ -147,7 +149,7 @@ button {
   width: 300px;
   padding: 30px;
   border-radius: 10px;
-  background-color: #848C8E;
+  background-color: #848c8e;
   text-align: center;
   font-size: 30px;
   -webkit-user-select: none;
